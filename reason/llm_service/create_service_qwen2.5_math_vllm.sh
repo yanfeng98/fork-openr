@@ -7,8 +7,8 @@ WORKER_BASE_PORT=30010
 echo PYTHON_EXECUTABLE=$(which python3)
 PYTHON_EXECUTABLE=$(which python3)
 
-MODEL_BASE=/hpc2ssd/JH_DATA/spooler/qxiao183/workspace/hf_models
-CUDA_DEVICE_BASE=0
+MODEL_BASE=~/.cache/huggingface/hub
+CUDA_DEVICE_BASE=5
 POLICY_MODEL_NAME=Qwen/Qwen2.5-Math-1.5B-Instruct
 # VALUE_MODEL_NAME=qwen_prm/checkpoint-6898/
 # VALUE_MODEL_NAME=Qwen/Qwen2.5-Math-7B-PRM
