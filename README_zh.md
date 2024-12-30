@@ -95,7 +95,6 @@
 <!-- News and Updates -->
 
 ## 新闻与更新
-- **[29/11/2024]** 已添加 [**demo**](https://www.modelscope.cn/studios/modelscope/OpenR_Inference) 页面至 *ModelScope*. 感谢 [@wangxingjun778](https://github.com/wangxingjun778) !
 - **[24/10/2024]** ***OpenR*** 现已支持 **MCTS** 推理 ([#24](https://github.com/openreasoner/openr/pull/24))! 🌲
 - **[15/10/2024]** 我们的报告已发布在 [**Arxiv**](https://arxiv.org/abs/2410.09671) 上! 
 - **[12/10/2024]** ***OpenR*** 已经发布！ 🚀 
