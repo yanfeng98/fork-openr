@@ -92,14 +92,6 @@
 
 </details>
 
-<!-- News and Updates -->
-
-## 新闻与更新
-- **[24/10/2024]** ***OpenR*** 现已支持 **MCTS** 推理 ([#24](https://github.com/openreasoner/openr/pull/24))! 🌲
-- **[15/10/2024]** 我们的报告已发布在 [**Arxiv**](https://arxiv.org/abs/2410.09671) 上! 
-- **[12/10/2024]** ***OpenR*** 已经发布！ 🚀 
-
-
 ## 功能
 
 <p align="center">
@@ -123,22 +115,6 @@
 | ✅ PRM奖励模型的训练                            | - **PRM 训练**: Supervised Training for PRMs<br> - **生成式奖励模型训练**: Direct GenRM                                                                                                                                           |
 | ✅ 多种搜索策略            | - **Greedy Search**<br> - **Best-of-N**<br> - **Beam Search**<br> - **MCTS**<br> - [**rStar**](https://arxiv.org/pdf/2408.06195v1): Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solvers<br> - **Critic-MCTS** |
 | ✅ Test-time Computation and Scaling Law | 详见 [benchmark](#benchmark)                                                                                                                                                                                             |
-
-## TODO
-
-
-| 功能        | TODO (<span style="color:red;">高优先级</span>, 欢迎加入开发！)                                                                                                                                                                                                                                                                                                                                         |
-|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 👨‍💻数据   | - 复现 [**Journey Learning**](https://arxiv.org/abs/2410.18982)                                                                                                                                                                                                                                                                                                                                |
-| 👨‍💻RL训练 | - 分布式训练    <br/>- Reinforcement Fine-Tuning (RFT) [#80](https://github.com/openreasoner/openr/issues/80)                                                                                                                                                                                                                                                                                     |
-| 👨‍💻PRM  | - 更大规模训练<br> - GenRM-CoT 的训练实现   <br/>- Soft-label training [#57](https://github.com/openreasoner/openr/issues/57)                                                                                                                                                                                                                                                                           |
-| 👨‍💻推理   | - 优化代码结构 [#53](https://github.com/openreasoner/openr/pull/53) <br> - 添加更多推理任务 (AIME, etc.) [#53](https://github.com/openreasoner/openr/pull/53) <br> - 多模态推理 [#82](https://github.com/openreasoner/openr/issues/82) <br> - 代码生成推理 [#68](https://github.com/openreasoner/openr/pull/68) <br/> - Dots [#75](https://github.com/openreasoner/openr/pull/75) <br/> - 推理精度检查 <br/> - Benchmarking |
-
-## Benchmark
-
-详见 [Benchmark](benchmark) !
-
-
 
 ## 图表
 
