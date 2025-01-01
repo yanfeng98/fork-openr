@@ -125,7 +125,7 @@
 
 ## 数据集与模型
 
-[//]: # ([PRM800K]&#40;https://github.com/openai/prm800k&#41; &#40;Process Supervision Dataset&#41;)
+[PRM800K](https://github.com/openai/prm800k)
 
 [MATH-APS](https://huggingface.co/datasets/mengfang/MATH-APS) (我们发布的数据集)
 
@@ -155,11 +155,6 @@ cd -
 - `Qwen2.5-Math-1.5B-Instruct`, `Qwen2.5-Math-7B-Instruct`
 - `peiyi9979/mistral-7b-sft`
 - `peiyi9979/math-shepherd-mistral-7b-prm`
-
-Huggingface 具体下载方式可参考 [Huggingface 下载教程](https://huggingface.co/docs/hub/models-downloading)
-
-在继续之前，请确保所有模型已根据项目设置保存在各自的目录中。
-
 
 ### 快速开始
 
