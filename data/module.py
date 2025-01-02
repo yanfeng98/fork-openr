@@ -1,5 +1,3 @@
-import torch
-import random
 import json
 import re
 import os
@@ -38,7 +36,7 @@ def perform_rollouts(node, model: LM, num_rollouts=None):
         node.add_rollout(result)
         is_correct = check_correctness(node.correct_answer, result)
         correctness_flags.append(int(is_correct))
-    return node.rollouts, correctness_flags
+    return correctness_flags
 
 def calculate_mc_score(node):
     correct_count = sum(

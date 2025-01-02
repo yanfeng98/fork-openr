@@ -1,6 +1,19 @@
+# Copyright 2024 luyanfeng
+#
+# Licensed under the MIT License, (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://opensource.org/licenses/MIT
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 import json
 import logging
-from datetime import datetime
 import yaml
 from module import Node, perform_rollouts, process_annotations, calculate_mc_score
 from model_utils import LM
@@ -93,7 +106,7 @@ def main():
         # Initialize the root node and perform rollouts
         nodes = []
         root_node = Node(problem, "", final_answer)
-        rollouts, correctness_flags = perform_rollouts(root_node, lm_model, initial_rollouts)
+        correctness_flags = perform_rollouts(root_node, lm_model, initial_rollouts)
         mc_score = calculate_mc_score(root_node)
         root_node.mc_score = mc_score
 
