@@ -1,0 +1,167 @@
+[
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "To solve the problem, we start by defining a new sequence \\( b_i = \\frac{a_i - i}{2} \\). Since \\( a_i \\) is a positive integer and \\( a_i - i \\) is even, \\( b_i \\) is a non-negative integer. The condition \\( a_1 \\lea_2 \\le \\cdots \\le a_{10} \\le 2007 \\) translates to:\n\n\\[ 1 \\le a_1 \\le a_2 \\le \\cdots \\le a_{10} \\le 2007\\]\n\\[ 1 - 1 \\le a_1 - 1 \\le a_2 - 2 \\le \\cdots \\le a_{10}- 10 \\le 2007 - 10 \\]\n\\[0 \\le 2b_1",
+        "mc_score": 0.6
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\le 2b_2 \\le \\cdots \\le 2b_{10} \\le 1997\\]\n\\[0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998.5\\]\n\nSince \\( b_i \\) are integers, we have \\( 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\). This is equivalent to finding the number ofnon-decreasing sequences of 10 integers chosen from the set \\(\\{0, 1, 2, \\ldots, 998\\}\\), which is a classic \"stars and",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\le 2b_2 \\le \\cdots \\le 2b_{10} \\le 1997\\]\n\\[0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998.5\\]\n\nSince \\( b_i \\) are integers, we have \\( 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\). This is equivalent to finding the number of",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "non-decreasing sequences of integers from 0 to 998 of length 10. The number of such sequences is given by the binomial coefficient:\n\\[\n\\binom{998 + 10}{10} = \\binom{1008}{10}.\n\\]\n\nWeneed to find the remainder when \\( m = 1008 \\) is divided by 1000. This is simply:\n\\[\n1008\\mod 1000 = 8.\n\\]\n\nThus, the remainder when",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "non-decreasing sequences of integers from 0 to 998 of length 10. The number of such sequences is given by the binomial coefficient:\n\\[\n\\binom{998 + 10}{10} = \\binom{1008}{10}.\n\\]\n\nWeneed to find the remainder when \\( m = 1008 \\) is divided by 1000. This is simply:\n\\[\n1008",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "non-decreasing sequences of integers from 0 to 998 of length 10. The number of such sequences is given by the binomial coefficient:\n\\[\n\\binom{998 + 10}{10} = \\binom{1008}{10}.\n\\]\n\nWe",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\mod 1000 = 8.\n\\]\n\nThus, theanswer",
+        "mc_score": 0.85
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\mod 1000 = 8.\n\\]\n\nThus, the",
+        "mc_score": 0.8
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "non-decreasing sequences of integers from 0 to 998 of length 10. The number of such sequences is given by the binomial coefficient:\n\\[\n\\binom{998 + 10}{10} = \\binom{1008}{10}.\n\\]\n\nWeneed to find the remainder when \\( m = 1008 \\) is divided by 1000. This is simply:\n\\[\n1008\\mod 1000 = 8.\n\\]\n\nThus, the remainder when",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "non-decreasing sequences of integers from 0 to 998 of length 10. The number of such sequences is given by the binomial coefficient:\n\\[\n\\binom{998 + 10}{10} = \\binom{1008}{10}.\n\\]\n\nWeneed to find the remainder when \\( m = 1008 \\) is divided by 1000. This is simply:\n\\[\n1008",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\mod 1000 = 8.\n\\]\n\nThus, the remainder when",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\mod 1000 = 8.\n\\]\n\nThus, the remainder when\\( m \\) is divided by1000 is",
+        "mc_score": 0.85
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\mod 1000 = 8.\n\\]\n\nThus, the remainder when\\( m \\) is divided by",
+        "mc_score": 0.75
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\mod 1000 = 8.\n\\]\n\nThus, the remainder when",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\mod 1000 = 8.\n\\]\n\nThus, theansweris:\n\\[\n\\boxed{",
+        "mc_score": 0.5
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "non-decreasing sequences of integers from 0 to 998 of length 10. The number of such sequences is given by the binomial coefficient:\n\\[\n\\binom{998 + 10}{10} = \\binom{1008}{10}.\n\\]\n\nWe",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "need to find the remainder when 1008 is divided by 1000. This is simply:\n\\[\n1008 \\mod1000 = 8.\n\\]\n\nThus, the remainder when",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "need to find the remainder when 1008 is divided by 1000. This is simply:\n\\[\n1008 \\mod",
+        "mc_score": 0.9
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "1000 = 8\n\\]\n\nThus, the remainder when \\(m \\) is divided by",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "1000 = 8\n\\]\n\nThus, the remainder when \\(",
+        "mc_score": 0.85
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "1000 = 8\n\\]\n\nThus, the remainder when \\(m \\) is divided by23 is",
+        "mc_score": 0.6
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "1000 = 8\n\\]\n\nThus, the remainder when \\(m \\) is divided by",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "To solve the problem, we start by defining a new sequence \\( b_i = \\frac{a_i - i}{2} \\). Since \\( a_i \\) is a positive integer and \\( a_i - i \\) is even, \\( b_i \\) is a non-negative integer. The condition \\( a_1 \\lea_2 \\le \\cdots \\le a_{10} \\le 2007 \\) translates to:\n\n\\[ 1 \\le a_1 \\le a_2 \\le \\cdots \\le a_{10} \\le 2007\\]\n\\[ 1 - 1 \\le a_1 - 1 \\le a_2 - 2 \\le \\cdots \\le a_{10}- 10 \\le 2007 - 10 \\]\n\\[0 \\le 2b_1\\le 2b_2\\le",
+        "mc_score": 0.55
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\cdots \\le 2b_{10} \\le 1997\\]\n\\[0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le \\frac{1997}{2} = 998.5\\]\n\nSince \\( b_i \\) is an integer, we have \\( 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\). The number of non-decreasingsequences of 10 integers chosen from the set \\(\\{0, 1, 2, \\ldots, 998\\}\\) is equivalent to the number of",
+        "mc_score": 0.9
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\cdots \\le 2b_{10} \\le 1997\\]\n\\[0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le \\frac{1997}{2} = 998.5\\]\n\nSince \\( b_i \\) is an integer, we have \\( 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\). The number of non-decreasing",
+        "mc_score": 0.8
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\cdots \\le 2b_{10} \\le 1997\\]\n\\[0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le \\frac{1997}{2} = 998.5\\]\n\nSince \\( b_i \\) is an integer, we have \\( 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\). The number of non-decreasingsequences of 10 integers chosen from the set \\(\\{0, 1, 2, \\ldots, 998\\}\\) is equivalent to the number ofcombinations with repetition, which is given",
+        "mc_score": 0.75
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "need to find the remainder when 1008 is divided by 1000. This is simply:\n\\[\n1008 \\mod1000 = 8.\n\\]\n\nThus, the remainder when",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "To solve the problem, we start by defining a new sequence \\( b_i = \\frac{a_i - i}{2} \\). Since \\( a_i \\) is a positive integer and \\( a_i - i \\) is even, \\( b_i \\) is a non-negative integer. The condition \\( a_1 \\lea_2 \\le \\cdots \\le a_{10} \\le 2007 \\) translates to:\n\n\\[ 1 \\le a_1 \\le a_2 \\le \\cdots \\le a_{10} \\le 2007",
+        "mc_score": 0.4
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\]\n\\[ 1 - 1 \\le a_1 - 1 \\le a_2 - 2 \\le \\cdots \\le a_{10} - 10 \\le 2007 - 10 \\]\n\\[ 0 \\le (a_1 - 1) \\le (a_2 - 2) \\le \\cdots \\le (a_{10} - 10) \\le 1997\\]\n\\[ 0 \\le 2b_1 \\le 2b_2 \\le \\cdots \\le 2b_{10} \\le 1997 \\]\n\\[ 0 \\le b_1 \\leb_2 \\le \\cdots \\le b_{10} \\le \\frac{1997}{2}\\]\nSince \\(\\frac{3997}{2}=",
+        "mc_score": 0.85
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "998.5\\), we have:\n\\[ 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998\\]\nThese are the number of non-decreasing sequences of integers from the set \\(\\{0, 1, 2, \\ldots, 998\\}\\), which is equivalent to finding the number of combinations with",
+        "mc_score": 0.95
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\]\n\\[ 1 - 1 \\le a_1 - 1 \\le a_2 - 2 \\le \\cdots \\le a_{10} - 10 \\le 2007 - 10 \\]\n\\[ 0 \\le (a_1 - 1) \\le (a_2 - 2) \\le \\cdots \\le (a_{10} - 10) \\le 1997\\]\n\\[ 0 \\le 2b_1 \\le 2b_2 \\le \\cdots \\le 2b_{10} \\le 1997 \\]\n\\[ 0 \\le b_1 \\leb_2 \\le \\cdots \\le b_{10} \\le \\frac{1997}{2}",
+        "mc_score": 0.75
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\]\nSince \\(1997\\) is odd, \\(\\frac{1997}{2} = 998.5\\). Therefore, \\(b_{10} \\le 998\\). This means \\(b_1, b_2, \\ldots, b_{10}\\) are non-negative integers such that \\(0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998\\). The number of such sequencesis equivalent to the number of ways to choose 10 elements (with repetition allowed) from a set of 999 elements, which",
+        "mc_score": 0.9
+    },
+    {
+        "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.\n",
+        "partial_answer": "\\]\nSince \\(1997\\) is odd, \\(\\frac{1997}{2} = 998.5\\). Therefore, \\(b_{10} \\le 998\\). This means \\(b_1, b_2, \\ldots, b_{10}\\) are non-negative integers such that \\(0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998\\). The number of such sequences",
+        "mc_score": 0.85
+    }
+]
