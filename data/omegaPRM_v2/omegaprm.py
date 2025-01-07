@@ -1,6 +1,5 @@
 import heapq
 import math
-import random
 import re
 import json
 from typing import List, Tuple, Dict, Any, Optional
@@ -31,8 +30,9 @@ def check_correctness(generated_response: str, expected_answer: str) -> bool:
 
 
 class LanguageModel:
-    def __init__(self, model_name="/root/.cache/modelscope/hub/Qwen/Qwen2___5-Math-7B-Instruct",
+    def __init__(self, model_name="Qwen/Qwen2___5-Math-7B-Instruct",
                  device="cuda", max_new_tokens=512, temperature=0.7, top_k=30, top_p=0.9, model_type="vllm"):
+        
         """
         Initialize the LanguageModel with parameters for the LLM service.
 
@@ -44,6 +44,7 @@ class LanguageModel:
         - top_k (int): Top-K sampling for diversity.
         - top_p (float): Top-P sampling for response diversity.
         """
+        
         self.llm_service = LLMService(
             model_name=model_name,
             device=device,
@@ -60,6 +61,7 @@ class LanguageModel:
         self.llm_service.start_service()
 
     def generate_rollout(self, state_prefix: str, num_copies) -> List[str]:
+        
         """
         Combine the default prompt with the state prefix and generate a response.
 
@@ -69,9 +71,10 @@ class LanguageModel:
         Returns:
         - str: Generated response from LLM.
         """
+        
         prompt = self.default_prompt + state_prefix
         batch_response = self.llm_service.generate_response(prompt, num_copies)
-        return batch_response # Assuming the response format has ['role'] entries and 'assistant' response
+        return batch_response
 
     def update_prompt(self, new_prompt: str):
         """
@@ -163,6 +166,7 @@ class SearchTree:
 # Define the Candidate Pool as a priority queue with update capability
 class CandidatePool:
     def __init__(self):
+        
         self.heap: List[Tuple[float, int]] = []  # Heap of (-priority, unique_id)
         self.entry_finder: Dict[int, Tuple[float, int]] = {}  # Maps unique_id to (-priority, unique_id)
         self.counter = itertools.count()  # Unique sequence count
@@ -227,8 +231,9 @@ class CandidatePool:
 
 # Define the OmegaPRM algorithm
 class OmegaPRM:
-    def __init__(self, LM: LanguageModel,  c_puct: float, alpha: float, beta: float, L: int, k: int, N: int,
-                 rollout_budget: int, save_data_tree: bool):
+    
+    def __init__(self, LM: LanguageModel,  c_puct: float, alpha: float, beta: float, L: int, k: int, N: int, rollout_budget: int, save_data_tree: bool):
+        
         """
         Initialize the OmegaPRM algorithm.
 
@@ -242,6 +247,7 @@ class OmegaPRM:
         - k (int): Number of rollouts for Monte Carlo estimation.
         - N (int): Maximum search count.
         """
+        
         self.LM = LM  # Language Model
         self.expected_answer = None
         self.c_puct = c_puct
@@ -258,9 +264,6 @@ class OmegaPRM:
 
         self.n = 0
         self.total_rollouts = 0
-
-
-
 
     def reset(self):
         """Reset internal state variables to prepare for a fresh run."""

@@ -12,13 +12,15 @@ except ImportError:
 os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 
 class LLMService:
+
     """
     A class to manage a large language model (LLM) service using Hugging Face's transformers library.
     """
 
-    def __init__(self, model_name: str = "/root/.cache/modelscope/hub/Qwen/Qwen2___5-Math-7B-Instruct",
+    def __init__(self, model_name: str = "Qwen/Qwen2___5-Math-7B-Instruct",
                  device: str = "cuda", max_new_tokens: int = 2048,
                  temperature: float = 0.7, top_k: int = 30, top_p: float = 0.9, model_type: str="hf"):
+        
         """
         Initialize the LLMService with model parameters and sampling settings.
 
@@ -30,6 +32,7 @@ class LLMService:
         - top_k (int): Top-K sampling parameter for response diversity.
         - top_p (float): Top-P sampling parameter for response diversity.
         """
+        
         self.model_name = model_name
         self.device = device
         self.max_new_tokens = max_new_tokens
@@ -42,10 +45,12 @@ class LLMService:
         self.load_lock = threading.Lock()
 
     def start_service(self):
+
         """
         Start the LLM service by loading the model into the chosen pipeline if it's not already loaded.
         Ensures thread-safe loading using a lock.
         """
+        
         with self.load_lock:
             if self.model_type == "hf":
                 if self.pipe is None:

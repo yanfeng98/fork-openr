@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the model and other parameters
-MODEL_NAME="/root/.cache/modelscope/hub/Qwen/Qwen2___5-Math-7B-Instruct"
+MODEL_NAME="Qwen/Qwen2___5-Math-7B-Instruct"
 MODEL_TYPE="vllm"  # Set to "vllm" for vLLM or "hf" for Hugging Face
 DEVICE="cuda"
 MAX_NEW_TOKENS=2048

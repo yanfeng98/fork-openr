@@ -10,10 +10,8 @@ DS_NAME = "math-aps-v2"
 
 logger: logging.Logger
 
-
-# Set up logging based on provided log file prefix and create log directory if it doesn't exist
-
 def setup_logging(log_file_prefix: str):
+
     log_dir = os.path.dirname(log_file_prefix)
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
@@ -26,11 +24,9 @@ def setup_logging(log_file_prefix: str):
     )
     return logging.getLogger(__name__)
 
-# Load questions from JSON
 def load_questions(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
-
 
 # Filter a single question based on 32 rollouts
 def should_process_question(question: Dict[str, str], llm: LanguageModel) -> bool:
@@ -77,6 +73,7 @@ def save_question_data(collected_data: Dict, index: int, output_path: str):
 
 
 def main(args):
+
     global logger
     logger = setup_logging(args.log_file_prefix)
 
@@ -132,6 +129,7 @@ def main(args):
 
 
 if __name__ == "__main__":
+
     parser = argparse.ArgumentParser(description="Run OmegaPRM on filtered questions")
 
     parser.add_argument(
@@ -155,7 +153,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model_name",
         type=str,
-        default="/root/.cache/modelscope/hub/Qwen/Qwen2___5-Math-7B-Instruct",
+        default="Qwen/Qwen2___5-Math-7B-Instruct",
         help="Model name or path for the language model",
     )
     parser.add_argument(

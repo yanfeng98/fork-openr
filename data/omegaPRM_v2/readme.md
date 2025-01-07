@@ -9,7 +9,7 @@ This script runs `OmegaPRM` on multiple GPUs, with each GPU handling a different
    Use `process_json.py` to split your input JSON file into multiple parts for each GPU:
 
    ```bash
-   python process_json.py --input_file questions.json --output_dir output_directory --num_splits 8
+   python process_json.py
    ```
    
    2. **Run the Script**
