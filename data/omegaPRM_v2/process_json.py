@@ -39,4 +39,4 @@ def split_questions_uniformly(input_filepath: str, output_directory: str, num_fi
 
 if __name__ == "__main__":
 
-    split_questions_uniformly("../extracted_problems_and_answers.json", "output_directory", 8)
+    split_questions_uniformly("../extracted_problems_and_answers.json", "output_directory", 4)
