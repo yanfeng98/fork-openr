@@ -26,7 +26,7 @@ mkdir -p $OUTPUT_DIR
 mkdir -p  log
 
 # Start the OmegaPRM process on each GPU with separate split files
-for i in {1..8}
+for i in {1..4}
 do
     SPLIT_FILE="$SPLIT_DIR/questions_part_${i}.json"
     GPU_ID=$((i-1))
