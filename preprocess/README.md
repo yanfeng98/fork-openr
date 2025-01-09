@@ -19,8 +19,6 @@ options:
       --neutral-is-bad     Treat `neutral` as negative labels for PRM800K. PRM800K only
 ```
 
-Note that if you directly pass `"\n\n"` to `--step-tag`, the script receive `"\\n\\n"` instead of two newlines. Several solutions are suggested in [this answer](https://stackoverflow.com/a/50642130), but none worked for me. Also be cautious about using step tags that contain non-ascii characters when preprocessing Math-APS datasets, because for now this script drops any rationale that contains non-ascii characters, even if it is only the step tag that contains them. You are welcome to open an issue or pull request to make an improvement.
-
 ## Datasets
 - PRM800K: [GitHub repo](https://github.com/openai/prm800k)
 - Math-APS: collected by `data/omegaPRM_v2/` with `save_data_tree=False`
