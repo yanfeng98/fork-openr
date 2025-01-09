@@ -104,3 +104,7 @@ label("D", D, dir(0));
 label("E", E, NE);
 [/asy] Find the length of $CE.$
 2025-01-09 12:03:42,069 [INFO] Question 11 is saved to output_results_data/results_part_4.json/math-aps-v2.jsonl
+2025-01-09 12:04:06,926 [INFO] Question passed filter: A wooden cube, whose edges are one centimeter long, rests on a horizontal surface. Illuminated by a point source of light that is $x$ centimeters directly above an upper vertex, the cube casts a shadow on the horizontal surface. The area of the shadow, which does not include the area beneath the cube is 48 square centimeters. Find the greatest integer that does not exceed $1000x$.
+
+2025-01-09 12:04:06,927 [INFO] Processing question with OmegaPRM: A wooden cube, whose edges are one centimeter long, rests on a horizontal surface. Illuminated by a point source of light that is $x$ centimeters directly above an upper vertex, the cube casts a shadow on the horizontal surface. The area of the shadow, which does not include the area beneath the cube is 48 square centimeters. Find the greatest integer that does not exceed $1000x$.
+
