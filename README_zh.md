@@ -241,48 +241,6 @@ torchrun --nproc_per_node=2 finetune_qwen.py --model_path $YOUR_MODEL_PATH \
                                              --datasets both \
 ```
 
-## 加入我们
-
-> 您的每一份贡献对社区来说都是宝贵的。
-
-感谢您对 ***OpenR*** 的关注！🥰 我们致力于发展开源社区，并十分欢迎大家的contribution。无论大小，您的努力都将帮助我们成长和进步。贡献不仅限于代码——解答问题、帮助他人、改进我们的文档、分享项目同样具有深远的影响。
-
-欢迎查阅 [贡献指南](CONTRIBUTING.md) ! 
-
-### 未来计划
-
-- 更全面的强化学习训练和搜索方法的实验
-
-- 更大规模的Prove-Verifier模型
-
-- 支持自我提升训练功能
-
-<!-- CONTACT -->
-
-## 联系方式
-
-***OpenR*** 社区由以下团队维护：
-
-- **Openreasoner Team** (openreasoner@gmail.com)
-
-## License
-
-***OpenR*** is released under the MIT License.
-
-## 欢迎引用
-
-如果您觉得我们的资源对您有帮助，请引用我们的论文：
-
-```
-@article{wang2024openr,
-  title={OpenR: An Open Source Framework for Advanced Reasoning with Large Language Models},
-  author={Wang, Jun and Fang, Meng and Wan, Ziyu and Wen, Muning and Zhu, Jiachen and Liu, Anjie and Gong, Ziqin and Song, Yan and Chen, Lei and Ni, Lionel M and others},
-  journal={arXiv preprint arXiv:2410.09671},
-  year={2024}
-}
-```
-十分感谢！
-
 ## 问答示例
 
 ### 对比 过程奖励模型（PRM）：Math-psa (Ours) V.S. Math-Shepherd 
@@ -307,15 +265,6 @@ torchrun --nproc_per_node=2 finetune_qwen.py --model_path $YOUR_MODEL_PATH \
   <img src="./figure/QA/QA6.png" alt="QA 6" width="70%" />
   <img src="./figure/QA/QA7.png" alt="QA 7" width="70%" />
 </p>
-
-
-## 社区
-
-**微信群聊**:
-
-<img src="./figure/wechat_qrcode.jpg" width="30%" />
-
-
 
 ## 参考引用
 
