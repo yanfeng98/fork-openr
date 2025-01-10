@@ -20,7 +20,6 @@ options:
 ```
 
 ## Datasets
-- PRM800K: [GitHub repo](https://github.com/openai/prm800k)
+
 - Math-APS: collected by `data/omegaPRM_v2/` with `save_data_tree=False`
 - Math-APS-tree: collected by `data/omegaPRM_v2/` with `save_data_tree=True`
-- Math-Shepherd: [Hugging Face dataset](https://huggingface.co/datasets/peiyi9979/Math-Shepherd)
