@@ -11,7 +11,7 @@ class Args(NamedTuple):
     Stores cli arguments.
 
     Attributes:
-      dataset_type: One of prm800k, math-aps, math-aps-tree, and math-shepherd
+      dataset_type: One of math-aps, and math-aps-tree
       file: Path to the original dataset
       step_tag: Step tag to be appended to each step
       suffix: Suffix to be appended to `file` for the output path

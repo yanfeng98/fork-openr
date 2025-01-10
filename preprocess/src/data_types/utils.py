@@ -1,4 +1,3 @@
-from datetime import datetime
 from typing import Any, Callable, Type, TypeVar, cast
 
 T = TypeVar("T")
@@ -30,16 +29,6 @@ def from_float(x: Any) -> float:
     return float(x)
 
 
-def from_none(x: Any) -> Any:
-    """Manual type check for `None`."""
-    assert x is None
-    return x
-
-
-def from_datetime(x: Any) -> datetime:
-    return datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%f")
-
-
 def from_list(f: Callable[[Any], T], x: Any) -> list[T]:
     """
     Assert `x` is a list and call `f` on elements of `x`.
@@ -48,27 +37,6 @@ def from_list(f: Callable[[Any], T], x: Any) -> list[T]:
     """
     assert isinstance(x, list)
     return list(map(f, x))
-
-
-def from_union(type_check_fn_lst: list[Callable[[Any], Any]], x: Any) -> Any:
-    """Assert `x` is either of the types."""
-    for f in type_check_fn_lst:
-        try:
-            return f(x)
-        except:
-            pass
-    assert False
-
-
-def from_optional(type_fn: Callable[[Any], T], x: Any) -> T | None:
-    """Type check for Optional type."""
-    return from_union([type_fn, from_none], x)
-
-
-def from_bool(x: Any) -> bool:
-    """Manual type check for `bool`."""
-    assert isinstance(x, bool)
-    return x
 
 
 def to_float(x: Any) -> float:

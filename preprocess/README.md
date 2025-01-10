@@ -4,7 +4,6 @@
 
 ```bash
 usage: python cli.py [-h] [-t STEP_TAG] [-s SUFFIX]
-              [--add-step-prefix] [--neutral-is-bad]
               DATASET_TYPE FILE
 
 positional arguments:
@@ -15,8 +14,6 @@ options:
   -h, --help               show this help message and exit
   -t, --step-tag STEP_TAG  Step tag. Default: \n\n\n\n\n
   -s, --suffix SUFFIX      Suffix appended to FILE for the output path. Default: new
-      --add-step-prefix    Prepend "Step i: " to each step. PRM800K only
-      --neutral-is-bad     Treat `neutral` as negative labels for PRM800K. PRM800K only
 ```
 
 ## Datasets

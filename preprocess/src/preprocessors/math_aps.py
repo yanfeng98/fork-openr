@@ -19,9 +19,7 @@ class MathAPSPreprocessor(PreprocessorBase):
         ds_path: str | Path,
         step_tag: str,
         suffix: str = "new",
-        **kwargs,
     ) -> None:
-        del kwargs  # for compatibility with PRM800KPreprocessor
         super().__init__(ds_path, step_tag, suffix)
 
     def _read_ds(self) -> None:
@@ -77,9 +75,8 @@ def convert_math_aps_item(
 
 class MathAPSTreePreprocessor(PreprocessorBase):
     def __init__(
-        self, ds_path: str | Path, step_tag: str, suffix: str = "new", **kwargs
+        self, ds_path: str | Path, step_tag: str, suffix: str = "new",
     ) -> None:
-        del kwargs  # for compatibility with PRM800KPreprocessor
         super().__init__(ds_path, step_tag, suffix)
 
     def _read_ds(self) -> None:
