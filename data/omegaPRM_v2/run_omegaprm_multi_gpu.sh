@@ -30,7 +30,7 @@ for i in {1..4}
 do
     SPLIT_FILE="$SPLIT_DIR/questions_part_${i}.json"
     GPU_ID=$((i-1))
-    OUTPUT_FILE="$OUTPUT_DIR/results_part_${i}.json"
+    OUTPUT_FILE="$OUTPUT_DIR/results_part_${i}"
     LOG_FILE_PREFIX="log/omega_prm_gpu_$GPU_ID"
 
     # Run the OmegaPRM process in the background on the specified GPU
