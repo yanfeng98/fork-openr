@@ -28,7 +28,7 @@ def parse_args() -> Args:
     parser.add_argument(
         "dataset_type",
         type=str,
-        help="Which dataset FILE is (prm800k, math-aps, math-aps-tree, or math-shepherd)",
+        help="Which dataset FILE is (math-aps, or math-aps-tree)",
     )
     parser.add_argument(
         "file",
